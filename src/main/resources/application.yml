@@ -1,0 +1,23 @@
+spring:
+  ai:
+    chat:
+      client:
+        enabled: true
+    openai:
+      api-key: sk-94d1060f95e54da7b7e6fa0dde6c682f      #这里的key可以是OpenAI API key也可以是Deepseek API key
+      base-url: https://api.deepseek.com      #跟上面保持一致就行
+      chat:
+        options:
+          model: deepseek-chat      #跟上面保持一致就行
+    deepseek:
+      api-key: sk-94d1060f95e54da7b7e6fa0dde6c682f    #Deepseek API key
+      chat:
+        options:
+          model: deepseek-chat  #可以不指定使用的模型，默认为deepseek-chat 还可以选择 usedeepseek-coder模型
+    ollama:
+      base-url: http://localhost:11434    #默认http://localhost:11434
+      chat:
+        options:
+          model: deepseek-r1:latest
+
+
