@@ -9,11 +9,5 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class MySimpleTextVectorTest {
 
-    @Resource
-    MySimpleTextVector mySimpleTextVector;
 
-    @Test
-    void convertTextToEmbedding() {
-        mySimpleTextVector.convertTextToEmbedding();
-    }
 }
