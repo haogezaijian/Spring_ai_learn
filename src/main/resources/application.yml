@@ -8,7 +8,13 @@ spring:
       base-url: https://api.deepseek.com      #跟上面保持一致就行
       chat:
         options:
-          model: deepseek-chat      #跟上面保持一致就行
+          model: deepseek-chat
+      embedding:
+        api-key: sk-f7fdfee83ef04388bac5bb4def74093f
+        options:
+          model: text-embedding-v4
+          dimensions: 1024
+        base-url: https://dashscope.aliyuncs.com/compatible-mode
     deepseek:
       api-key: sk-94d1060f95e54da7b7e6fa0dde6c682f    #Deepseek API key
       chat:
@@ -19,5 +25,6 @@ spring:
       chat:
         options:
           model: deepseek-r1:latest
+
 
 
