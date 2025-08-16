@@ -10,7 +10,7 @@ spring:
         options:
           model: deepseek-chat
       embedding:
-        api-key: api-key
+        api-key: sk-f7fdfee83ef04388bac5bb4def74093f
         options:
           model: text-embedding-v4
           dimensions: 1024
