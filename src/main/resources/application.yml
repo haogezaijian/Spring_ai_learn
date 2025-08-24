@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    active: local
   ai:
     chat:
       client:
@@ -10,7 +12,7 @@ spring:
         options:
           model: deepseek-chat
       embedding:
-        api-key: sk-f7fdfee83ef04388bac5bb4def74093f
+        api-key: sk-a37302da969f4340b4e7fb8d22c9777f
         options:
           model: text-embedding-v4
           dimensions: 1024
@@ -25,6 +27,15 @@ spring:
       chat:
         options:
           model: deepseek-r1:latest
+    mcp:
+      client:
+        stdio:
+          servers-configuration: classpath:mcp-servers.json
+      server:
+        name: weather-mcp-server
+        sse-message-endpoint: /mcp/weather
+        version: 1.0.0
+        type: sync
 
 
 

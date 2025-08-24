@@ -116,7 +116,7 @@ public class EmbeddingController {
     }
 
     @GetMapping("/search/top")
-    public List<Document> searchTop(@RequestParam(name = "query",defaultValue = "皇帝") String query,@RequestParam(name = "topK",defaultValue = "2") int topK) {
+    public List<Document> searchTop(@RequestParam(name = "query",defaultValue = "皇帝") String query,@RequestParam(name = "topK",defaultValue = "1") int topK) {
         SearchRequest searchRequest = SearchRequest.builder()
                 .query(query)
                 .topK(topK)
