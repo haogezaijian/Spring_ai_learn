@@ -18,12 +18,10 @@ public class McpController {
     @Resource
     private ChatClient openAiChatClient;
 
-    @Resource
-    @Qualifier("mcpToolCallbacks")
+    @Resource(name = "mcpToolCallbacks")
     private ToolCallbackProvider toolCallbackProvider;
 
-    @Resource
-    @Qualifier("weatherCallbackProvider")
+    @Resource(name = "weatherCallbackProvider")
     private ToolCallbackProvider weatherCallbackProvider;
 
     @RequestMapping("/chat")
